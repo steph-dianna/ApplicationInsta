@@ -81,9 +81,7 @@ public class InstaAdapter extends RecyclerView.Adapter<InstaAdapter.ViewHolder> 
                         .load(imaj)
                         .fitCenter()
                         .into(photo);
-
             }
-
         }
 
     }

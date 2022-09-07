@@ -48,7 +48,8 @@ public class Fragment_Plus extends Fragment {
     private TextInputLayout description;
     public String photoFileName = "photo.jpg";
 
-    public Fragment_Plus(){}
+    public Fragment_Plus() {
+    }
 
 
     @Override
@@ -80,15 +81,18 @@ public class Fragment_Plus extends Fragment {
             @Override
             public void onClick(View view) {
                 String description = etDescription.getText().toString();
-                if (description.isEmpty()){
+                if (description.isEmpty()) {
                     Toast.makeText(getContext(), "Description cannot be empty ", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if (photoFile == null || ivPostImage.getDrawable() == null){
+                if (photoFile == null || ivPostImage.getDrawable() == null) {
                     Toast.makeText(getContext(), "There is no image!", Toast.LENGTH_SHORT).show();
                 }
-                ParseUser currentUser =ParseUser.getCurrentUser();
-                SavePost(description, currentUser,photoFile);
+//                ParseUser currentUser =ParseUser.getCurrentUser();
+//                SavePost(description, currentUser,photoFile);
+
+                ParseUser currentUser = ParseUser.getCurrentUser();
+                SavePost(description, currentUser, photoFile);
 
 
             }
@@ -103,9 +107,6 @@ public class Fragment_Plus extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment__plus, container, false);
     }
-
-
-
 
 
     private void launchCamera() {
@@ -155,7 +156,7 @@ public class Fragment_Plus extends Fragment {
         File mediaStorageDir = new File(getContext().getExternalFilesDir(Environment.DIRECTORY_PICTURES), TAG);
 
         // Create the storage directory if it does not exist
-        if (!mediaStorageDir.exists() && !mediaStorageDir.mkdirs()){
+        if (!mediaStorageDir.exists() && !mediaStorageDir.mkdirs()) {
             Log.d(TAG, "failed to create directory");
         }
 
@@ -195,33 +196,25 @@ public class Fragment_Plus extends Fragment {
         post.saveInBackground(new SaveCallback() {
             @Override
             public void done(ParseException e) {
-                if (e != null){
+                if (e != null) {
                     Log.e(TAG, "Error while saving", e);
                     Toast.makeText(getContext(), "Error while saving", Toast.LENGTH_SHORT).show();
                     pbLoading.setVisibility(ProgressBar.INVISIBLE);
                     return;
                 }
 
-                if (photoFile == null || ivPostImage.getDrawable() == null){
-                Toast.makeText(getContext(), "There is no image", Toast.LENGTH_SHORT).show();
-                pbLoading.setVisibility(ProgressBar.INVISIBLE); // hide the progressBar
-                return;
-            }
+                if (photoFile == null || ivPostImage.getDrawable() == null) {
+                    Toast.makeText(getContext(), "There is no image", Toast.LENGTH_SHORT).show();
+                    pbLoading.setVisibility(ProgressBar.INVISIBLE); // hide the progressBar
+                    return;
+                }
                 Toast.makeText(getContext(), "Post save as successful!!", Toast.LENGTH_SHORT).show();
                 etDescription.setText("");
                 ivPostImage.setImageResource(0);
                 pbLoading.setVisibility(ProgressBar.INVISIBLE); // hide the progressBar
                 btnSubmit.setVisibility(View.INVISIBLE);
                 btnCaptureImage.setVisibility(View.VISIBLE);
-//                description_text_input.setVisibility(View.INVISIBLE);
-//                ivPicture.setVisibility(View.INVISIBLE);
-
-//                Log.i(TAG, "Post save was successful!!");
-//                etDescription.setText("");
-//                ivPostImage.setImageResource(0);
             }
         });
     }
-
-
 }

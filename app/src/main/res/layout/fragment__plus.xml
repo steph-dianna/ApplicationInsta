@@ -43,7 +43,6 @@ android:orientation="vertical">
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_below="@+id/etDescription"
-
     android:text="Take Picture" />
 
     <ImageView
@@ -55,12 +54,13 @@ android:orientation="vertical">
         android:layout_marginTop="10dp"
         tools:srcCompat="@tools:sample/avatars" />
 
-<Button
-    android:id="@+id/btnSubmit"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:text="Submit" />
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:visibility="invisible" />
 
 
 </RelativeLayout>

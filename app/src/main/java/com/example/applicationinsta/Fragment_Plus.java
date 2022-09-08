@@ -37,6 +37,7 @@ import java.io.File;
 import java.util.List;
 
 public class Fragment_Plus extends Fragment {
+
     public static final String TAG = "Fragment_Plus";
     public static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 42;
     private EditText etDescription;

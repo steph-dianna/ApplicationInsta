@@ -22,18 +22,58 @@
         android:id="@+id/photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
+        android:layout_below="@+id/utilisateur"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="5dp"
+        android:layout_marginTop="55dp"
         android:contentDescription="image_posted"
-        android:layout_below="@+id/utilisateur"
         tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/coeur" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/chat_unread" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/send" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="66dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/photo"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        app:srcCompat="@drawable/ic_baseline_bookmark_24" />
 
     <TextView
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/photo"
-        android:layout_marginTop="55dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="38dp"
         android:text="TextView" />
 </RelativeLayout>

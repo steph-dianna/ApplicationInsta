@@ -70,7 +70,6 @@ public class fragment_Home extends Fragment {
             public void done(List<Post> posts, ParseException e) {
                 if (e != null){
                     Log.e(TAG, "Issue with getting Posts", e);
-                    Toast.makeText(getContext(), "Issue with getting Posts", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 for (Post post : posts){

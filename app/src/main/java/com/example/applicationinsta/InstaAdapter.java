@@ -78,7 +78,7 @@ public class InstaAdapter extends RecyclerView.Adapter<InstaAdapter.ViewHolder> 
             if (imaj != null) {
 
                 Glide.with(context)
-                        .load(imaj)
+                        .load(imaj.getUrl())
                         .fitCenter()
                         .into(photo);
             }

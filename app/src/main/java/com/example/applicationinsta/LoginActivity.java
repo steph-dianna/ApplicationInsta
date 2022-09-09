@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.parse.LogInCallback;
+import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
@@ -62,8 +63,8 @@ public class LoginActivity extends AppCompatActivity {
     private void SignUp(String username, String password) {
         ParseUser user = new ParseUser();
 // Set core properties
-        user.setUsername("joestevens");
-        user.setPassword("secret123");
+        user.setUsername(username);
+        user.setPassword(password);
 // Invoke signUpInBackground
         user.signUpInBackground(new SignUpCallback() {
             public void done(ParseException e) {

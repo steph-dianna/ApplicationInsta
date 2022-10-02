@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="5dp">
 
     <TextView
@@ -69,21 +69,8 @@
         app:srcCompat="@drawable/ic_baseline_bookmark_24" />
 
 
-
-
-    <ImageView
-        android:id="@+id/coeurRouge"
-        android:layout_width="59dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/photo"
-        android:layout_marginStart="18dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="5dp"
-        app:srcCompat="@drawable/coeur2"
-        />
-
-    <ImageView
-        android:id="@+id/coeur"
+    <ImageButton
+        android:id="@+id/ivCoeur"
         android:layout_width="59dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/photo"
@@ -106,7 +93,15 @@
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView5"
-        android:layout_marginTop="38dp"
+        android:layout_below="@+id/nbrLike"
+        android:layout_marginTop="15dp"
         android:text="TextView" />
+
+    <TextView
+        android:id="@+id/nbrLike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="15dp"
+        android:text="8 Likes" />
 </RelativeLayout>

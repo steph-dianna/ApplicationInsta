@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/steph/Desktop/ANDROID/ApplicationInsta/app/src/main/res/layout/activity_detail.xml" value="0.2" />
+        <entry key="..\:/Users/steph/Desktop/ANDROID/ApplicationInsta/app/src/main/res/layout/activity_insta_adapter.xml" value="0.2" />
+        <entry key="..\:/Users/steph/Desktop/ANDROID/ApplicationInsta/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/steph/Desktop/ANDROID/ApplicationInsta/app/src/main/res/layout/fragment__account.xml" value="0.2" />
+        <entry key="..\:/Users/steph/Desktop/ANDROID/ApplicationInsta/app/src/main/res/layout/griditem.xml" value="0.203125" />
         <entry key="..\:/Users/steph/Desktop/ApplicationInsta/app/src/main/res/drawable-v24/account.xml" value="0.2115" />
         <entry key="..\:/Users/steph/Desktop/ApplicationInsta/app/src/main/res/drawable-v24/account_outline.xml" value="0.2115" />
         <entry key="..\:/Users/steph/Desktop/ApplicationInsta/app/src/main/res/drawable-v24/chat_unread.xml" value="0.2115" />
@@ -24,7 +29,7 @@
         <entry key="..\:/Users/steph/Desktop/ApplicationInsta/app/src/main/res/layout/activity_insta_adapter.xml" value="0.22" />
         <entry key="..\:/Users/steph/Desktop/ApplicationInsta/app/src/main/res/layout/activity_login.xml" value="0.2255083179297597" />
         <entry key="..\:/Users/steph/Desktop/ApplicationInsta/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/steph/Desktop/ApplicationInsta/app/src/main/res/layout/fragment__account.xml" value="0.1" />
+        <entry key="..\:/Users/steph/Desktop/ApplicationInsta/app/src/main/res/layout/fragment__account.xml" value="0.22" />
         <entry key="..\:/Users/steph/Desktop/ApplicationInsta/app/src/main/res/layout/fragment__home.xml" value="0.1" />
         <entry key="..\:/Users/steph/Desktop/ApplicationInsta/app/src/main/res/layout/fragment__plus.xml" value="0.1" />
         <entry key="..\:/Users/steph/Desktop/ApplicationInsta/app/src/main/res/layout/item_adapter.xml" value="0.20416666666666666" />
